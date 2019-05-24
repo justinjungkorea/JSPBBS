@@ -43,7 +43,7 @@ public class UserDao {
 
     public int join(User user){
         try {
-            preparedStatement = connection.prepareStatement("insert into user values(?,?,?,?,?)");
+            preparedStatement = connection.prepareStatement("insert into user values (?, ?, ?, ?, ?)");
             preparedStatement.setString(1,user.getUserID());
             preparedStatement.setString(2,user.getUserPassword());
             preparedStatement.setString(3,user.getUserName());
