@@ -40,6 +40,7 @@
             else{
                 UserDao userDao = new UserDao();
                 int result = userDao.join(user);
+                System.out.println("joinAction.jsp - gender : "+user.getUserGender());
                 if(result < 0){
                     PrintWriter script = response.getWriter();
                     script.println("<script> alert('이미 존재하는 아이디입니다.'); history.back(); </script>");
@@ -49,7 +50,6 @@
                     script.println("<script> location.href='main.jsp' </script>");
                 }
             }
-
         %>
 
 </body >

@@ -10,7 +10,7 @@ public class UserDao {
     public UserDao(){
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            String url = "jdbc:mysql://localhost:3306/bbs";
+            String url = "jdbc:mysql://localhost:3306/bbs?useUnicode=true& useUnicode=true&characterEncoding=euc_kr";
             String id = "root";
             String pw = "asdf";
             connection = DriverManager.getConnection(url,id,pw);
@@ -48,6 +48,7 @@ public class UserDao {
             preparedStatement.setString(2,user.getUserPassword());
             preparedStatement.setString(3,user.getUserName());
             preparedStatement.setString(4,user.getUserGender());
+            System.out.println("userDao - join - gender : "+user.getUserGender());
             preparedStatement.setString(5,user.getUserEmail());
             return preparedStatement.executeUpdate();
         } catch (Exception e) {
