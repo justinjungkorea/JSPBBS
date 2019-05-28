@@ -78,7 +78,32 @@
             </div>
         </div>
     </div>
-
+    <div class="container">
+        <div class="carousel slide" id="myCarousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1" ></li>
+                <li data-target="#myCarousel" data-slide-to="2" ></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/01.jpg" >
+                </div>
+                <div class="item">
+                    <img src="images/02.jpg" >
+                </div>
+                <div class="item">
+                    <img src="images/03.jpg" >
+                </div>
+            </div>
+            <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a >
+            <a href="#myCarousel" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a >
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="./js/bootstrap.js"></script >
 </body>
