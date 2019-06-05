@@ -24,7 +24,7 @@
     }
     if(userID == null){
         PrintWriter script = response.getWriter();
-        script.println("<script> alert('로그인을 하세.'); location.href = 'login.jsp' </script>");
+        script.println("<script> alert('로그인을 하세요.'); location.href = 'login.jsp' </script>");
     }
     int bbsID = 0;
     if(request.getParameter("bbsID") != null){
